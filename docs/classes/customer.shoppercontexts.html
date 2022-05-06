@@ -97,7 +97,7 @@ token = <span class="hljs-keyword">await</span> helpers.getShopperToken(clientCo
 clientConfig.headers[<span class="hljs-string">&quot;authorization&quot;</span>] = token.getBearerHeader();
 <span class="hljs-keyword">const</span> shopperContextsClient = <span class="hljs-keyword">new</span> Customer.ShopperContexts(clientConfig);</code></pre>
 					<span style="font-size:.7em; display:block; text-align: right">
-						API Version: 0.0.6<br />
+						API Version: 0.0.7<br />
 						Last Updated: <br />
 					</span>
 					<dl class="tsd-comment-tags">
@@ -1261,7 +1261,7 @@ clientConfig.headers[<span class="hljs-string">&quot;authorization&quot;</span>]
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gets the shopper&#39;s context based on the shopperJWT.</p>
+									<p>Gets the shopper&#39;s context based on the shopperJWT. <strong>****</strong> This API is currently a work in progress, and not available to use yet. <strong>****</strong></p>
 								</div>
 								<p>If you would like to get a raw Response object use the other getShopperContext function.</p>
 								<dl class="tsd-comment-tags">
@@ -1315,7 +1315,7 @@ clientConfig.headers[<span class="hljs-string">&quot;authorization&quot;</span>]
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gets the shopper&#39;s context based on the shopperJWT.</p>
+									<p>Gets the shopper&#39;s context based on the shopperJWT. <strong>****</strong> This API is currently a work in progress, and not available to use yet. <strong>****</strong></p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>beta</dt>
@@ -1392,7 +1392,7 @@ clientConfig.headers[<span class="hljs-string">&quot;authorization&quot;</span>]
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Updates the shopper&#39;s context based on the shopperJWT. If the shopper context exists, it is updated with the patch body. If a customer qualifiier and/or an effectiveDateTime is already present in the existing shopper context, its value is replaced by corresponding value from patch body. If an effectiveDateTime/customer qualifers&#39; value is set to null it is deleted from existing shopper context. If an effectiveDateTime/customer qualifiier is new, it is added to the existing Shopper context.</p>
+									<p>Updates the shopper&#39;s context based on the Shopper JWT. If the shopper context exists, it&#39;s updated with the patch body. If a customer qualifier or an <code>effectiveDateTime</code> is already present in the existing shopper context, its value is replaced by the corresponding value from the patch body. If a customer qualifers&#39; value is set to <code>null</code> it&#39;s deleted from existing shopper context. If <code>effectiveDateTime</code> value is set to set to an empty string (&quot;&quot;), it&#39;s deleted from existing shopper context. If <code>effectiveDateTime</code> value is set to <code>null</code> it&#39;s ignored. If an <code>effectiveDateTime</code> or customer qualifiiers&#39; value is new, it&#39;s added to the existing Shopper context.</p>
 								</div>
 								<p>If you would like to get a raw Response object use the other updateShopperContext function.</p>
 								<dl class="tsd-comment-tags">
@@ -1449,7 +1449,7 @@ clientConfig.headers[<span class="hljs-string">&quot;authorization&quot;</span>]
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Updates the shopper&#39;s context based on the shopperJWT. If the shopper context exists, it is updated with the patch body. If a customer qualifiier and/or an effectiveDateTime is already present in the existing shopper context, its value is replaced by corresponding value from patch body. If an effectiveDateTime/customer qualifers&#39; value is set to null it is deleted from existing shopper context. If an effectiveDateTime/customer qualifiier is new, it is added to the existing Shopper context.</p>
+									<p>Updates the shopper&#39;s context based on the Shopper JWT. If the shopper context exists, it&#39;s updated with the patch body. If a customer qualifier or an <code>effectiveDateTime</code> is already present in the existing shopper context, its value is replaced by the corresponding value from the patch body. If a customer qualifers&#39; value is set to <code>null</code> it&#39;s deleted from existing shopper context. If <code>effectiveDateTime</code> value is set to set to an empty string (&quot;&quot;), it&#39;s deleted from existing shopper context. If <code>effectiveDateTime</code> value is set to <code>null</code> it&#39;s ignored. If an <code>effectiveDateTime</code> or customer qualifiiers&#39; value is new, it&#39;s added to the existing Shopper context.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>beta</dt>
@@ -1748,10 +1748,10 @@ clientConfig.headers[<span class="hljs-string">&quot;authorization&quot;</span>]
 						<a href="customer.shoppercustomers.html" class="tsd-kind-icon">Shopper<wbr>Customers</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="customer.shopperlogin.html" class="tsd-kind-icon">Shopper<wbr>Login</a>
+						<a href="customer.shopperloginslas.html" class="tsd-kind-icon">Shopper<wbr>Login<wbr>Slas</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="customer.slasadmin.html" class="tsd-kind-icon">Slas<wbr>Admin</a>
+						<a href="customer.shopperloginslasadmin.html" class="tsd-kind-icon">Shopper<wbr>Login<wbr>Slas<wbr>Admin</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/customer.html#user_agent_header" class="tsd-kind-icon">USER_<wbr>AGENT_<wbr>HEADER</a>
